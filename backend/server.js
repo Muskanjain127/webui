@@ -7,7 +7,9 @@ dotenv.config();
 connectDB();
 
 const app = express();
-app.use(cors({origin:,'https://webui-ecru.vercel.app/','http://localhost:5173'}));
+app.use(cors({
+  origin: ["https://webui-ecru.vercel.app", "http://localhost:5173"]
+})); 
 app.use(express.json());
 
 // Router
