@@ -7,7 +7,7 @@ dotenv.config();
 connectDB();
 
 const app = express();
-app.use(cors({origin:'http://localhost:5173','https://webui-wfv9.onrender.com'}));
+app.use(cors({origin:'http://localhost:5173','https://webui-ecru.vercel.app/'}));
 app.use(express.json());
 
 // Router
