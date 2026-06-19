@@ -13,7 +13,7 @@ const Page6 = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get('https://your-backend-app.onrender.com/api/info'||'http://localhost:8000/api/info');
+      const response = await axios.get('https://webui-wfv9.onrender.com/api/info'||'http://localhost:8000/api/info');
       const result = response.data;
       setData({
         name: result.name,
@@ -35,7 +35,7 @@ const Page6 = () => {
   const handleUpdate = async (e) => {
     e.preventDefault();
     try {
-      await axios.put('https://your-backend-app.onrender.com/api/info'||'http://localhost:8000/api/info', {
+      await axios.put('https://webui-wfv9.onrender.com/api/info'||'http://localhost:8000/api/info', {
         name: formData.name,
         whychooseus: formData.whyChooseUs,
         about: formData.aboutUs
