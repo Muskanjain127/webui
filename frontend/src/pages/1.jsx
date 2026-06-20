@@ -147,8 +147,8 @@ const Home = () => {
         </div>
 
         <div className="absolute top-6 md:top-8 lg:top-10 right-6 md:right-8 lg:right-10 opacity-30">
-          <div className="grid grid-cols- gap-2">
-            {[...Array(36)].map((_, i) => (
+          <div className="grid grid-cols-5 gap-3">
+            {[...Array(45)].map((_, i) => (
               <div key={i} className="w-1 h-1 bg-white rounded-full" />
             ))}
           </div>
